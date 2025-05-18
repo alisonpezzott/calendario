@@ -1,0 +1,1064 @@
+createOrReplace
+
+	table dCalendario
+		dataCategory: Time
+
+		column Fecha
+			dataType: dateTime
+			isKey
+			formatString: Short Date
+			summarizeBy: none
+			sourceColumn: Fecha
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column FechaIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Fecha
+			summarizeBy: none
+			sourceColumn: FechaIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiasHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Fecha
+			summarizeBy: none
+			sourceColumn: DiasHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column FechaActual
+			dataType: string
+			displayFolder: Fecha
+			summarizeBy: none
+			sourceColumn: FechaActual
+			sortByColumn: Fecha
+
+			annotation SummarizationSetBy = Automatic
+
+		column Ano
+			dataType: int64
+			formatString: 0
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: Ano
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoInicio
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoInicio
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column AnoFin
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoFin
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column AnoIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoDescendenteNombre
+			dataType: int64
+			formatString: 0
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoDescendenteNombre
+			sortByColumn: AnoDecrecienteNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoDecrecienteNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoDecrecienteNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnosHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnosHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoActual
+			dataType: string
+			displayFolder: Ano
+			summarizeBy: none
+			sourceColumn: AnoActual
+			sortByColumn: Ano
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDelMes
+			dataType: int64
+			formatString: 0
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDelMes
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDelAno
+			dataType: int64
+			formatString: 0
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDelAno
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDeLaSemanaNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDeLaSemanaNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDeLaSemanaNombre
+			dataType: string
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDeLaSemanaNombre
+			sortByColumn: DiaDeLaSemanaNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDeLaSemanaNombreCorto
+			dataType: string
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDeLaSemanaNombreCorto
+			sortByColumn: DiaDeLaSemanaNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDeLaSemanaNombreIniciales
+			dataType: string
+			displayFolder: Dia
+			summarizeBy: none
+			sourceColumn: DiaDeLaSemanaNombreIniciales
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesNombre
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesNombre
+			sortByColumn: MesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesNombreCorto
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesNombreCorto
+			sortByColumn: MesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesNombreIniciales
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesNombreIniciales
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoNombre
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesAnoNombre
+			sortByColumn: MesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesDiaNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesDiaNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesDiaNombre
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesDiaNombre
+			sortByColumn: MesDiaNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesInicio
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesInicio
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column MesFin
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesFin
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column MesIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesesHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesesHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesActualNombre
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesActualNombre
+			sortByColumn: MesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesActualNombreCorto
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesActualNombreCorto
+			sortByColumn: MesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoActualNombre
+			dataType: string
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesAnoActualNombre
+			sortByColumn: MesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreNome
+			dataType: string
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreNome
+			sortByColumn: TrimestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreAnoNombre
+			dataType: string
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreAnoNombre
+			sortByColumn: TrimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreAnoNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreInicio
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreInicio
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column TrimestreFin
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreFin
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column TrimesteIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimesteIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestresHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestresHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreActual
+			dataType: string
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreActual
+			sortByColumn: TrimestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreAnoActual
+			dataType: string
+			displayFolder: Trimestre
+			summarizeBy: none
+			sourceColumn: TrimestreAnoActual
+			sortByColumn: TrimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesDelTrimestreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Mes
+			summarizeBy: none
+			sourceColumn: MesDelTrimestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaDelAnoNumeroISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaDelAnoNumeroISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: AnoISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaAnoNumeroISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaAnoNumeroISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaAnoNombreISO
+			dataType: string
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaAnoNombreISO
+			sortByColumn: SemanaAnoNumeroISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaInicioISO
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaInicioISO
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column SemanaFinISO
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaFinISO
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column SemanaindiceISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaindiceISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanasHastaHoyISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanasHastaHoyISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaActualISO
+			dataType: string
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaActualISO
+			sortByColumn: SemanaAnoNumeroISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaPeriodoNombre
+			dataType: string
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaPeriodoNombre
+			sortByColumn: SemanaAnoNumeroISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemanaDelMesNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Semana
+			summarizeBy: none
+			sourceColumn: SemanaDelMesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestreAnoNombre
+			dataType: string
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestreAnoNombre
+			sortByColumn: SemestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestreAnoNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestreIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestreIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestresHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestresHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column SemestreActual
+			dataType: string
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: SemestreActual
+			sortByColumn: SemestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestreAnoNombre
+			dataType: string
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestreAnoNombre
+			sortByColumn: BimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestreAnoNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestreIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestreIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestresHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestresHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestreActual
+			dataType: string
+			displayFolder: Semestre
+			summarizeBy: none
+			sourceColumn: BimestreActual
+			sortByColumn: BimestreAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaDelMesNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaDelMesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaMesNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaMesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaMesNombre
+			dataType: string
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaMesNombre
+			sortByColumn: QuincenaMesNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaMesAnoNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaMesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaMesAnoNombre
+			dataType: string
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaMesAnoNombre
+			sortByColumn: QuincenaMesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaIndice
+			dataType: int64
+			formatString: 0
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaIndice
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenasHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenasHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuincenaActual
+			dataType: string
+			displayFolder: Quincena
+			summarizeBy: none
+			sourceColumn: QuincenaActual
+			sortByColumn: QuincenaMesAnoNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column FechaDeCierreRef
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: FechaDeCierreRef
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column AnoCierre
+			dataType: int64
+			formatString: 0
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: AnoCierre
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesCierreNombre
+			dataType: string
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: MesCierreNombre
+			sortByColumn: MesCierreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesCierreNombreCorto
+			dataType: string
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: MesCierreNombreCorto
+			sortByColumn: MesCierreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesCierreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: MesCierreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoCierreNombre
+			dataType: string
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: MesAnoCierreNombre
+			sortByColumn: MesAnoCierreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoCierreNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Cierre
+			summarizeBy: none
+			sourceColumn: MesAnoCierreNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column EstacaoNorteNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Estacion
+			summarizeBy: none
+			sourceColumn: EstacaoNorteNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column EstacaoNorteNombre
+			dataType: string
+			displayFolder: Estacion
+			summarizeBy: none
+			sourceColumn: EstacaoNorteNombre
+			sortByColumn: EstacaoNorteNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column EstacaoSulNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: Estacion
+			summarizeBy: none
+			sourceColumn: EstacaoSulNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column EstacaoSulNombre
+			dataType: string
+			displayFolder: Estacion
+			summarizeBy: none
+			sourceColumn: EstacaoSulNombre
+			sortByColumn: EstacaoSulNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaFestivo
+			dataType: string
+			displayFolder: DiaLaborable_Festivo
+			summarizeBy: none
+			sourceColumn: DiaFestivo
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaLaborableNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: DiaLaborable_Festivo
+			summarizeBy: none
+			sourceColumn: DiaLaborableNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaLaborableNombre
+			dataType: string
+			displayFolder: DiaLaborable_Festivo
+			summarizeBy: none
+			sourceColumn: DiaLaborableNombre
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoFiscalInicialNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnoFiscalInicialNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoFiscalFinalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnoFiscalFinalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column Anofiscal
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: Anofiscal
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoFiscalInicio
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnoFiscalInicio
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column AnoFiscalFin
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnoFiscalFin
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column AnoFiscalActual
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnoFiscalActual
+			sortByColumn: Anofiscal
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnosFiscalesHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: AnosFiscalesHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesFiscalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesFiscalNombre
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesFiscalNombre
+			sortByColumn: MesFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesFiscalNombreCorto
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesFiscalNombreCorto
+			sortByColumn: MesFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesFiscalActual
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesFiscalActual
+			sortByColumn: MesFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoFiscalNombre
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesAnoFiscalNombre
+			sortByColumn: MesAnoFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoFiscalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesAnoFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesAnoFiscalActual
+			dataType: string
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesAnoFiscalActual
+			sortByColumn: MesAnoFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesesFiscalesHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: AnoFiscal
+			summarizeBy: none
+			sourceColumn: MesesFiscalesHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreFiscalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreFiscalNombre
+			dataType: string
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestreFiscalNombre
+			sortByColumn: TrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column MesDelTrimestreFiscalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: MesDelTrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoTrimestreFiscalNombre
+			dataType: string
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: AnoTrimestreFiscalNombre
+			sortByColumn: AnoTrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column AnoTrimestreFiscalNumero
+			dataType: int64
+			formatString: 0
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: AnoTrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestralFiscalInicio
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestralFiscalInicio
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column TrimestreFiscalFin
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestreFiscalFin
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column TrimestresFiscalesHastaHoy
+			dataType: int64
+			formatString: 0
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestresFiscalesHastaHoy
+
+			annotation SummarizationSetBy = Automatic
+
+		column TrimestreFiscalActual
+			dataType: string
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: TrimestreFiscalActual
+			sortByColumn: AnoTrimestreFiscalNumero
+
+			annotation SummarizationSetBy = Automatic
+
+		column DiaDelTrimestreFiscal
+			dataType: int64
+			formatString: 0
+			displayFolder: TrimestreFiscal
+			summarizeBy: none
+			sourceColumn: DiaDelTrimestreFiscal
+
+			annotation SummarizationSetBy = Automatic
+
+		partition dCalendario = entity
+			mode: directLake
+			source
+				entityName: dCalendario
+				schemaName: dbo
+				expressionSource: DatabaseQuery
+
+		annotation PBI_ResultType = Table
+

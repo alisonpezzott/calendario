@@ -1,0 +1,1071 @@
+createOrReplace
+
+	table dCalendar
+		dataCategory: Time
+
+		column Date
+			dataType: dateTime
+			isKey
+			formatString: Short Date
+			summarizeBy: none
+			sourceColumn: Date
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column DateIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Date
+			summarizeBy: none
+			sourceColumn: DateIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column DaysToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Date
+			summarizeBy: none
+			sourceColumn: DaysToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentDate
+			dataType: string
+			displayFolder: Date
+			summarizeBy: none
+			sourceColumn: CurrentDate
+			sortByColumn: Date
+
+			annotation SummarizationSetBy = Automatic
+
+		column Year
+			dataType: int64
+			formatString: 0
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: Year
+
+			annotation SummarizationSetBy = Automatic
+
+		column YearStart
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearStart
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column YearEnd
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearEnd
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column YearIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column YearDescendingName
+			dataType: int64
+			formatString: 0
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearDescendingName
+			sortByColumn: YearDescendingNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column YearDescendingNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearDescendingNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column YearsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: YearsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentYear
+			dataType: string
+			displayFolder: Year
+			summarizeBy: none
+			sourceColumn: CurrentYear
+			sortByColumn: Year
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfMonth
+			dataType: int64
+			formatString: 0
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfMonth
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfYear
+			dataType: int64
+			formatString: 0
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfYear
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfWeekNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfWeekNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfWeekName
+			dataType: string
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfWeekName
+			sortByColumn: DayOfWeekNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfWeekNameShort
+			dataType: string
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfWeekNameShort
+			sortByColumn: DayOfWeekNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfWeekNameInitials
+			dataType: string
+			displayFolder: Day
+			summarizeBy: none
+			sourceColumn: DayOfWeekNameInitials
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthName
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthName
+			sortByColumn: MonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthNameShort
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthNameShort
+			sortByColumn: MonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthNameInitials
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthNameInitials
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthYearName
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthYearName
+			sortByColumn: MonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthDayNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthDayNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthDayName
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthDayName
+			sortByColumn: MonthDayNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthStart
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthStart
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column MonthEnd
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthEnd
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column MonthIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentMonthName
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: CurrentMonthName
+			sortByColumn: MonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentMonthNameShort
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: CurrentMonthNameShort
+			sortByColumn: MonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentMonthYearName
+			dataType: string
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: CurrentMonthYearName
+			sortByColumn: MonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuarterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuarterName
+			dataType: string
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterName
+			sortByColumn: QuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuarterYearName
+			dataType: string
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterYearName
+			sortByColumn: QuarterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuarterYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuarterStart
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterStart
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column QuarterEnd
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterEnd
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column QuarterIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuarterIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column QuartersToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: QuartersToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentQuarter
+			dataType: string
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: CurrentQuarter
+			sortByColumn: QuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentQuarterYear
+			dataType: string
+			displayFolder: Quarter
+			summarizeBy: none
+			sourceColumn: CurrentQuarterYear
+			sortByColumn: QuarterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column MonthOfQuarterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Month
+			summarizeBy: none
+			sourceColumn: MonthOfQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekOfYearNumberISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekOfYearNumberISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column YearISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: YearISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekYearNumberISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekYearNumberISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekYearNameISO
+			dataType: string
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekYearNameISO
+			sortByColumn: WeekYearNumberISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekStartISO
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekStartISO
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column WeekEndISO
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekEndISO
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column WeekIndexISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekIndexISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeeksToTodayISO
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeeksToTodayISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentWeekISO
+			dataType: string
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: CurrentWeekISO
+			sortByColumn: WeekYearNumberISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekPeriodName
+			dataType: string
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekPeriodName
+			sortByColumn: WeekYearNumberISO
+
+			annotation SummarizationSetBy = Automatic
+
+		column WeekOfMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Week
+			summarizeBy: none
+			sourceColumn: WeekOfMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column HalfNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: HalfNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column HalfYearName
+			dataType: string
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: HalfYearName
+			sortByColumn: HalfYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column HalfYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: HalfYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column HalfIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: HalfIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column HalfsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: HalfsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentHalf
+			dataType: string
+			displayFolder: Half
+			summarizeBy: none
+			sourceColumn: CurrentHalf
+			sortByColumn: HalfYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimesterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: BimesterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimesterYearName
+			dataType: string
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: BimesterYearName
+			sortByColumn: BimesterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimesterYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: BimesterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimesterIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: BimesterIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column BimestersToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: BimestersToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentBimester
+			dataType: string
+			displayFolder: Bimester
+			summarizeBy: none
+			sourceColumn: CurrentBimester
+			sortByColumn: BimesterYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightOfMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightOfMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightMonthName
+			dataType: string
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightMonthName
+			sortByColumn: FortnightMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightMonthYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightMonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightMonthYearName
+			dataType: string
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightMonthYearName
+			sortByColumn: FortnightMonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightIndex
+			dataType: int64
+			formatString: 0
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightIndex
+
+			annotation SummarizationSetBy = Automatic
+
+		column FortnightsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: FortnightsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentFortnight
+			dataType: string
+			displayFolder: Fortnight
+			summarizeBy: none
+			sourceColumn: CurrentFortnight
+			sortByColumn: FortnightMonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingDateRef
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingDateRef
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column ClosingYear
+			dataType: int64
+			formatString: 0
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingYear
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingMonthName
+			dataType: string
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingMonthName
+			sortByColumn: ClosingMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingMonthNameShort
+			dataType: string
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingMonthNameShort
+			sortByColumn: ClosingMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingMonthYearName
+			dataType: string
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingMonthYearName
+			sortByColumn: ClosingMonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column ClosingMonthYearNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Closing
+			summarizeBy: none
+			sourceColumn: ClosingMonthYearNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column SeasonNorthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Season
+			summarizeBy: none
+			sourceColumn: SeasonNorthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column SeasonNorthName
+			dataType: string
+			displayFolder: Season
+			summarizeBy: none
+			sourceColumn: SeasonNorthName
+			sortByColumn: SeasonNorthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column SeasonSouthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: Season
+			summarizeBy: none
+			sourceColumn: SeasonSouthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column SeasonSouthName
+			dataType: string
+			displayFolder: Season
+			summarizeBy: none
+			sourceColumn: SeasonSouthName
+			sortByColumn: SeasonSouthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column Holiday
+			dataType: string
+			displayFolder: BusinessDays_Holidays
+			summarizeBy: none
+			sourceColumn: Holiday
+
+			annotation SummarizationSetBy = Automatic
+
+		column BusinessDayNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: BusinessDays_Holidays
+			summarizeBy: none
+			sourceColumn: BusinessDayNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column BusinessDayName
+			dataType: string
+			displayFolder: BusinessDays_Holidays
+			summarizeBy: none
+			sourceColumn: BusinessDayName
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearStartNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYearStartNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearEndNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYearEndNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYear
+			dataType: string
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYear
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearStart
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYearStart
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column FiscalYearEnd
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYearEnd
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column CurrentFiscalYear
+			dataType: string
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: CurrentFiscalYear
+			sortByColumn: FiscalYear
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalYear
+			summarizeBy: none
+			sourceColumn: FiscalYearsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalMonthName
+			dataType: string
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalMonthName
+			sortByColumn: FiscalMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalMonthNameShort
+			dataType: string
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalMonthNameShort
+			sortByColumn: FiscalMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentFiscalMonth
+			dataType: string
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: CurrentFiscalMonth
+			sortByColumn: FiscalMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearMonthName
+			dataType: string
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalYearMonthName
+			sortByColumn: FiscalYearMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearMonthNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalYearMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearMonthCurrent
+			dataType: string
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalYearMonthCurrent
+			sortByColumn: FiscalYearMonthNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalMonthsToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalMonth
+			summarizeBy: none
+			sourceColumn: FiscalMonthsToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalQuarterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalQuarterName
+			dataType: string
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalQuarterName
+			sortByColumn: FiscalQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalMonthOfQuarterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalMonthOfQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearQuarterName
+			dataType: string
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalYearQuarterName
+			sortByColumn: FiscalYearQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalYearQuarterNumber
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalYearQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column FiscalQuarterStart
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalQuarterStart
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column FiscalQuarterEnd
+			dataType: dateTime
+			formatString: Short Date
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalQuarterEnd
+
+			annotation SummarizationSetBy = Automatic
+
+			annotation UnderlyingDateTimeDataType = Date
+
+		column FiscalQuartersToToday
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: FiscalQuartersToToday
+
+			annotation SummarizationSetBy = Automatic
+
+		column CurrentFiscalQuarter
+			dataType: string
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: CurrentFiscalQuarter
+			sortByColumn: FiscalYearQuarterNumber
+
+			annotation SummarizationSetBy = Automatic
+
+		column DayOfFiscalQuarter
+			dataType: int64
+			formatString: 0
+			displayFolder: FiscalQuarter
+			summarizeBy: none
+			sourceColumn: DayOfFiscalQuarter
+
+			annotation SummarizationSetBy = Automatic
+
+		partition dCalendar = m
+			mode: import
+			source =
+					let
+					    Fonte = PowerPlatform.Dataflows(null),
+					    Workspaces = Fonte{[Id="Workspaces"]}[Data],
+					    #"76c65d33-809b-4893-b9a1-f7c148c12eec" = Workspaces{[workspaceId="76c65d33-809b-4893-b9a1-f7c148c12eec"]}[Data],
+					    #"387256c4-4ce1-4f4e-be19-fc6bc9345dca" = #"76c65d33-809b-4893-b9a1-f7c148c12eec"{[dataflowId="387256c4-4ce1-4f4e-be19-fc6bc9345dca"]}[Data],
+					    dCalendar_ = #"387256c4-4ce1-4f4e-be19-fc6bc9345dca"{[entity="dCalendar",version=""]}[Data]
+					in
+					    dCalendar_
+
+		annotation PBI_NavigationStepName = Navigation
+
+		annotation PBI_ResultType = Table
+
