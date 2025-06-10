@@ -1,6 +1,6 @@
 createOrReplace
 
-	table dCalendar
+	table DimCalendar
 		dataCategory: Time
 
 		column Date
@@ -1053,7 +1053,7 @@ createOrReplace
 
 			annotation SummarizationSetBy = Automatic
 
-		partition dCalendar = m
+		partition DimCalendar = m
 			mode: import
 			source = ```
 					let
@@ -1394,7 +1394,7 @@ createOrReplace
 					
 					    #"-----FISCAL COLUMNS-----" = "", 
 					    #"-----FISCAL YEAR-----" = "", 
-					    add_FiscalYearStartNumber = Table.AddColumn(add_BusinessDayName, "FiscalYearStartNumber", each Date.Year(Date.AddMonths([Date], 12 - monthOfFiscalYearEnd)), Int64.Type),
+					    add_FiscalYearStartNumber = Table.AddColumn(add_BusinessDayName, "FiscalYearStartNumber", each Date.Year(Date.AddMonths([Date], -monthOfFiscalYearEnd)), Int64.Type),
 					    add_FiscalYearEndNumber = Table.AddColumn(add_FiscalYearStartNumber, "FiscalYearEndNumber", each [FiscalYearStartNumber] + 1, Int64.Type),
 					    add_FiscalYear = Table.AddColumn(add_FiscalYearEndNumber, "FiscalYear", each "FY " & Text.From([FiscalYearStartNumber]) & "-" &Text.From([FiscalYearEndNumber]), type text),
 					    add_FiscalYearStart = Table.AddColumn( add_FiscalYear, "FiscalYearStart", each #date( [FiscalYearStartNumber], if monthOfFiscalYearEnd = 12 then 1 else  monthOfFiscalYearEnd + 1 , 1), type date ),

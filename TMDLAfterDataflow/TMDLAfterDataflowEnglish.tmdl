@@ -1,6 +1,6 @@
 createOrReplace
 
-	table dCalendar
+	table DimCalendar
 		dataCategory: Time
 
 		column Date
@@ -1053,17 +1053,17 @@ createOrReplace
 
 			annotation SummarizationSetBy = Automatic
 
-		partition dCalendar = m
+		partition DimCalendar = m
 			mode: import
 			source =
 					let
-					    Fonte = PowerPlatform.Dataflows(null),
-					    Workspaces = Fonte{[Id="Workspaces"]}[Data],
-					    #"76c65d33-809b-4893-b9a1-f7c148c12eec" = Workspaces{[workspaceId="76c65d33-809b-4893-b9a1-f7c148c12eec"]}[Data],
-					    #"387256c4-4ce1-4f4e-be19-fc6bc9345dca" = #"76c65d33-809b-4893-b9a1-f7c148c12eec"{[dataflowId="387256c4-4ce1-4f4e-be19-fc6bc9345dca"]}[Data],
-					    dCalendar_ = #"387256c4-4ce1-4f4e-be19-fc6bc9345dca"{[entity="dCalendar",version=""]}[Data]
+					    Source = PowerPlatform.Dataflows(null),
+					    Workspaces = Source{[Id="Workspaces"]}[Data],
+					    Workspace = Workspaces{[workspaceId="76c65d33-809b-4893-b9a1-f7c148c12eec"]}[Data],
+					    Dataflow = Workspace{[dataflowId="387256c4-4ce1-4f4e-be19-fc6bc9345dca"]}[Data],
+					    DimCalendar = Dataflow{[entity="DimCalendar",version=""]}[Data]
 					in
-					    dCalendar_
+					    DimCalendar
 
 		annotation PBI_NavigationStepName = Navigation
 

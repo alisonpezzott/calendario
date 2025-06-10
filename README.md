@@ -1,11 +1,10 @@
 # Tabela dimensão calendário  
 
-
 |Idioma/Culture|Doc|
 |:--|:---|
-|![pt-BR](https://img.shields.io/badge/🇧🇷-pt--BR-FFDF00?style=flat&labelColor=009C3B)|README.md (atual)|
-|![en-US](https://img.shields.io/badge/🇺🇸-en--US-B31942?style=flat&labelColor=0A3161)|[README_en.md](./README_en.md)|
-|![es-ES](https://img.shields.io/badge/🇪🇸-es--ES-FFCC00?style=flat&labelColor=AA151B)|[README_es.md](./README_es.md)|
+|🇵🇹|README.md(atual)|
+|🇺🇸|[README_en.md](./README_en.md)|
+|🇪🇸|[README_es.md](./README_es.md)|
 
 > [!IMPORTANT]  
 Antes de tudo possua pelo menos a versão de janeiro de 2025 do Power BI Desktop instalado.  

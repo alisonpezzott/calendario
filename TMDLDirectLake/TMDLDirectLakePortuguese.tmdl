@@ -1,6 +1,6 @@
 createOrReplace
 
-	table dCalendario
+	table DimCalendario
 		dataCategory: Time
 
 		column Data
@@ -1053,10 +1053,10 @@ createOrReplace
 
 			annotation SummarizationSetBy = Automatic
 
-		partition dCalendario = entity
+		partition DimCalendario = entity
 			mode: directLake
 			source
-				entityName: dCalendario
+				entityName: DimCalendario
 				schemaName: dbo
 				expressionSource: DatabaseQuery
 
